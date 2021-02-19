@@ -1,13 +1,99 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+}
+.right-button {
+  position: fixed;
+  top: 45vh;
+  right: 0;
+  border: none;
+  height: 10vh;
+  width: 5vw;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.left-button {
+  position: fixed;
+  top: 45vh;
+  left: 0;
+  border: none;
+  height: 10vh;
+  width: 5vw;
+}
+
+.question-content {
+  text-align: left;
+}
+
+.option-container {
+  padding-left: 11%;
+}
+
+.question-symbol {
+  font-size: 1.8rem !important;
+  font-weight: 400 !important;
+}
+
+.rounded-light {
+  border-radius: 0.8rem;
+}
+
+.footer-container {
+  width: 100vw;
+  position: absolute;
+  bottom: 5%;
+}
+
+.question-pallete > ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+.question-pallete > ul > li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+}
+
+.circular-buttons {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 0;
+  outline: none !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.25s all ease-in-out;
+}
+
+.circular-buttons:hover {
+  width: 30px;
+  height: 30px;
+  background-color: darkgrey;
+  transition: 0.25s all ease-in-out;
+}
+
+.highlighted-circular-button {
+  width: 30px;
+  height: 30px;
+  background-color: darkgrey;
+  border-radius: 50%;
+  border: 0;
+  outline: none !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.start-container{
+  position:relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width:100vw;
+  margin-left: auto;
+  margin-top: auto;
 }
