@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 //Header Component
 const Header = ({ quesviewscreen }) => {
-  const [timeLeft, setTimeLeft] = useState(10); //state related to the timer
+  const [timeLeft, setTimeLeft] = useState(200); //state related to the timer
 
   useEffect(() => {
     const interval = setInterval(tick, 1000);

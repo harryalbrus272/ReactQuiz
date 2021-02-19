@@ -39,6 +39,10 @@ const QuestionMover = ({ questions, resultantArray }) => {
 
   //Updating current question
   const questionChanged = (id) => {
+    if(id>1 && id<questions.length){
+      setIsLeftValid(true);
+      setIsRightValid(true);
+    }
     if (id === 1) {
       setIsLeftValid(false);
       setIsRightValid(true);
