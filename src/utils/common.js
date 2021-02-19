@@ -1,3 +1,4 @@
+//exporting sample questions
 export const questions = [
   {
     id: 1,
