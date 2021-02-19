@@ -15,7 +15,7 @@ const Welcome = () => {
     if (time <= 0) {
       setShowQuestionMover(false);
 
-      //This is the JSON object
+      //This is the final JSON object
       console.log(Arr);
     }
   };
@@ -39,7 +39,7 @@ const Welcome = () => {
               resultantArray={resultantArray}
             />
           )}
-          {!showQuestionMover && <EndScreen />}
+          {!showQuestionMover && <EndScreen showJSON={Arr} />}
           <Footer />
         </>
       ) : (

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 //Header Component
 const Header = ({ quesviewscreen }) => {
-  const [timeLeft, setTimeLeft] = useState(200); //state related to the timer
+  const [timeLeft, setTimeLeft] = useState(10); //state related to the timer
 
   useEffect(() => {
     const interval = setInterval(tick, 1000);
@@ -26,12 +26,12 @@ const Header = ({ quesviewscreen }) => {
   return (
     <>
       <nav className="navbar d-flex flex-wrap-reverse navbar-expand-lg navbar-dark bg-danger mb-3 py-3 text-light">
-        <div className="col-3"> Quiz assignment </div>
+        <div className="col-5"> Quiz assignment </div>
         {timeLeft > 0 && (
           <>
             {" "}
             <div className="col-3">{timeLeft}</div>{" "}
-            <button className="btn btn-light col-3" onClick={endTest}>
+            <button className="btn btn-light col-4" onClick={endTest}>
               End Test
             </button>{" "}
           </>
