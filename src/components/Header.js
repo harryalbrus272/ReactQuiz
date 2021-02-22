@@ -30,7 +30,7 @@ const Header = ({ quesviewscreen }) => {
         {timeLeft > 0 && (
           <>
             {" "}
-            <div className="col-3">{timeLeft}</div>{" "}
+            <div className="col-3">Timer : {timeLeft} seconds</div>{" "}
             <button className="btn btn-light col-4" onClick={endTest}>
               End Test
             </button>{" "}

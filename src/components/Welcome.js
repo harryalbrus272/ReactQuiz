@@ -53,7 +53,7 @@ const Welcome = () => {
           </button>
           <p style={{ marginTop: "2rem" }}>
             This is quick assignment for data structures in 200 seconds. These
-            question are related the basics, so just be quick.
+            question are related to the basics, so just be quick.
           </p>
         </div>
       )}
